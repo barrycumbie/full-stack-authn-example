@@ -22,7 +22,7 @@ function checkAuthenticationStatus() {
                 
                 <div class="mt-4">
                     <h5>🔐 What This Means:</h5>
-                    <ul class="list-unstyled mt-3 text-start protected-list">${
+                    <ul class="list-unstyled mt-3 text-start protected-list">
                         <li>✅ Your JWT token was found in localStorage</li>
                         <li>✅ Your identity has been verified</li>
                         <li>✅ You can now access authenticated content</li>
