@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!--
+    🏠 HOME PAGE - JWT Authentication Learning Demo
+    
+    This is the landing page for our JWT authentication tutorial.
+    Notice we're serving this as a proper HTML file instead of inline strings!
+    
+    Educational Points:
+    - res.sendFile() vs res.send() for serving HTML
+    - Proper file organization in web applications  
+    - Static file serving with Express
+    - Clean separation of content and server logic
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JWT Authentication Learning Demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <!-- Hero Section -->
+        <div class="hero-section text-center">
+            <div class="container">
+                <h1 class="display-4 mb-4">🔐 JWT Authentication Learning Demo</h1>
+                <p class="lead">Master JWT (JSON Web Token) authentication with hands-on examples</p>
+                <p class="mb-0">Complete with bcrypt, middleware, protected routes, and real-world patterns</p>
+            </div>
+        </div>
+
+        <!-- Demo Navigation Cards -->
+        <div class="row g-4 mb-5">
+            <div class="col-md-4">
+                <div class="card demo-card h-100">
+                    <div class="card-body text-center">
+                        <div class="display-1 mb-3">🔐</div>
+                        <h5 class="card-title">Authentication Demo</h5>
+                        <p class="card-text">Learn user registration, login, and JWT token creation</p>
+                        <a href="auth.html" class="btn btn-primary btn-lg">Start Here</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card demo-card h-100">
+                    <div class="card-body text-center">
+                        <div class="display-1 mb-3">🎯</div>
+                        <h5 class="card-title">Protected Route Demo</h5>
+                        <p class="card-text">Experience how protected routes work with automatic redirects</p>
+                        <a href="protected-demo.html" class="btn btn-info btn-lg">Try Demo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card demo-card h-100">
+                    <div class="card-body text-center">
+                        <div class="display-1 mb-3">📝</div>
+                        <h5 class="card-title">Protected CRUD Demo</h5>
+                        <p class="card-text">See authentication in action with real database operations</p>
+                        <a href="student-crud.html" class="btn btn-success btn-lg">View CRUD</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Learning Objectives -->
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        <h3 class="mb-0">🎓 What You'll Learn</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">✅ User registration and login processes</li>
+                                    <li class="list-group-item">✅ Password hashing with bcrypt for security</li>
+                                    <li class="list-group-item">✅ JWT token creation and validation</li>
+                                    <li class="list-group-item">✅ How protected routes work in practice</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">✅ Authentication middleware implementation</li>
+                                    <li class="list-group-item">✅ Frontend token storage and usage patterns</li>
+                                    <li class="list-group-item">✅ Automatic redirect patterns for unauthorized users</li>
+                                    <li class="list-group-item">✅ Real-world security best practices</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Technical Overview -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="card border-warning">
+                    <div class="card-header bg-warning">
+                        <h4 class="mb-0">🔧 Technical Stack</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="row text-center">
+                            <div class="col-md-3">
+                                <h5>Backend</h5>
+                                <p>Node.js + Express<br>MongoDB + JWT<br>bcrypt for passwords</p>
+                            </div>
+                            <div class="col-md-3">
+                                <h5>Frontend</h5>
+                                <p>Vanilla JavaScript<br>Bootstrap 5<br>localStorage for tokens</p>
+                            </div>
+                            <div class="col-md-3">
+                                <h5>Security</h5>
+                                <p>JWT tokens<br>Password hashing<br>Route protection</p>
+                            </div>
+                            <div class="col-md-3">
+                                <h5>Educational</h5>
+                                <p>Detailed comments<br>Live examples<br>Best practices</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="text-center mt-5 mb-4">
+            <p class="text-muted">
+                <small>Built for learning JWT authentication • Educational demo project</small>
+            </p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/index.js"></script>
+</body>
+</html>
